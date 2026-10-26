@@ -2,7 +2,6 @@ package com.example.lab_8
 
 class Wizard(val name: String, var mana: Int, var spellPower: Int) {
     fun castSpell(spell: String): Int {
-        //spell
         when (spell) {
             "Explosion" -> {
                 if (mana >= 10) {
@@ -21,4 +20,5 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
             }
         }
     }
+    fun restoreMana(amount: Int) { }
 }
